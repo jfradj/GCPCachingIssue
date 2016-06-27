@@ -1,0 +1,12 @@
+application: com-swike-caching-issue
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+automatic_scaling:
+  min_idle_instances: 1
+
+handlers:
+- url: .*
+  script: main.php
